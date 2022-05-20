@@ -10,7 +10,6 @@ var isValid = function(s) {
         } else{
             const popped = stack.pop();
             const string = `${popped}${char}`
-            console.log( string );
             if(string ==='()'||string ==='{}'||string ==='[]'){
                 valid = true && stack.length === 0;
             }else{
@@ -20,7 +19,7 @@ var isValid = function(s) {
         }
     }
         return valid;
-    }else{
+    } else{
         return false;
     }
     
