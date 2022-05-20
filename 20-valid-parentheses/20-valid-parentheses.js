@@ -12,7 +12,6 @@ var isValid = function(s) {
             const string = `${popped}${char}`
             console.log( string );
             if(string ==='()'||string ==='{}'||string ==='[]'){
-                console.log('HEre', stack);
                 valid = true && stack.length === 0;
             }else{
                 valid = false;
