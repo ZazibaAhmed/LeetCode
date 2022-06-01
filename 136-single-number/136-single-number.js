@@ -15,7 +15,6 @@ var singleNumber = function(nums) {
                 }
             }
             if(!double){
-                console.log(nums[i]);
                 return nums[i]
             }
         }
