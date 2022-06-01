@@ -11,15 +11,6 @@ var moveZeroes = function(nums) {
             i--;
         }
     }
-//     for(let j=0; j<nums.length; j++){
-//         if(nums[j]===0){
-//             nums.splice(j,1);
-//             console.log(nums);
-//             j--;
-//         }
-
-//     }
-    console.log('last',nums)
     for(let k=0; k<count; k++){
         nums.push(0);
     } 
