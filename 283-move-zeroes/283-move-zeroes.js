@@ -4,14 +4,17 @@
  */
 var moveZeroes = function(nums) {
     let count = 0;
-    for(let i=0; i<nums.length; i++){
+    let size = nums.length;
+    for(let i=0; i<size; i++){
         if(nums[i]===0){
             count=count+1;
             nums.splice(i,1);
+            nums.push(0);
             i--;
+            size--;
         }
     }
-    for(let k=0; k<count; k++){
-        nums.push(0);
-    } 
+    // for(let k=0; k<count; k++){
+    //     nums.push(0);
+    // } 
 };
