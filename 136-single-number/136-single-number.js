@@ -19,8 +19,5 @@ var singleNumber = function(nums) {
                 return nums[i]
             }
         }
-        console.log(double);  
-        // else{continue}
-        // console.log(nums);
     }
 };
