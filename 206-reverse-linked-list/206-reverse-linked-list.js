@@ -10,16 +10,16 @@
  * @return {ListNode}
  */
 var reverseList = function(head) {
-    const values = []
-    for(let i=head; i; i=i.next){
-        console.log(i.val);
-        values.push(i.val)
+    let current = head;
+    let previous = null;
+    let next = null;
+    while(current!==null){
+        next = current.next;
+        current.next = previous;
+        previous = current;
+        current = next;
+
     }
-    values.reverse();
-    k=0
-    for(let j=head; j; j=j.next){
-        j.val = values[k];
-        k++
-    }
-    return head;
+    console.log(current);
+    return previous;
 };
