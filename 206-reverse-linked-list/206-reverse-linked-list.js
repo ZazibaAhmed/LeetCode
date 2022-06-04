@@ -20,6 +20,5 @@ var reverseList = function(head) {
         current = next;
 
     }
-    console.log(current);
     return previous;
 };
