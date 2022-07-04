@@ -11,36 +11,17 @@
  * @return {number[]}
  */
 var postorderTraversal = function(root) {
-    let visited = [];
-    let current = root;
     let result = [];
-    let currentParent = [];
-    postorder(current, result);
+    postorder(root, result);
     return result;
 
-//     while(current !== null || visited.length!==0){
-  
-//         while(current){
-//             visited.push(current);
-//             current = current.left;
-//         }
-//         console.log('v',visited);
-//         current = visited.pop();
-//         currentParent.push(current.val);
-//         current = current.right;
-//         if(!current){
-//             result.push(currentParent.pop())
-//         }
-        
-//     }
-//     return result;
 };
 
-var postorder = function(root, result) {
-    if(root == null)
+var postorder = function(current, result) {
+    if(current == null)
 		return;
 
-	postorder(root.left, result);
-	postorder(root.right, result);
-    result.push(root.val);
+	postorder(current.left, result);
+	postorder(current.right, result);
+    result.push(current.val);
 };
