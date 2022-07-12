@@ -8,7 +8,7 @@ var plusOne = function(digits) {
     let plusOne = reversedArr[0]+1;
     // if( plusOne > 9 ){
         carry = plusOne > 9 ? 1 : 0;
-        reversedArr[0] = plusOne > 9 ? String(plusOne).split('')[1] :  reversedArr[0] = plusOne;
+        reversedArr[0] = plusOne > 9 ? String(plusOne).split('')[1] : plusOne;
         reversedArr = reversedArr.map(Number)
         for(let i=1; i<reversedArr.length; i++){
             if(reversedArr[i]+carry>9){
