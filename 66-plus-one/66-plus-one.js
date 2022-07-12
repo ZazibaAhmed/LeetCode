@@ -6,7 +6,7 @@ var plusOne = function(digits) {
     let reversedArr = digits.reverse();
     let carry = 0;
     
-    if(digits.length>1){
+    // if(digits.length>1){
         let plusOne = reversedArr[0]+1;
         if( plusOne > 9 ){
             carry = 1;
@@ -34,15 +34,15 @@ var plusOne = function(digits) {
             reversedArr[0] = plusOne;
             return reversedArr.reverse();
         }
-    }else{
-        let sum = digits[0]+1;
-        digits[0] = digits[0]+1;
-        if(sum>9){
-            // const arr
-            console.log(String(sum).split(''))
-            return String(sum).split('')
-        }
+//     }else{
+//         let sum = digits[0]+1;
+//         digits[0] = digits[0]+1;
+//         if(sum>9){
+//             // const arr
+//             console.log(String(sum).split(''))
+//             return String(sum).split('')
+//         }
         
-        return digits
-    }
+//         return digits
+//     }
 };
